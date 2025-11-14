@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Track - Offline Timetable</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+
+<h1>Track - My Timetable</h1>
+<button id="toggleMode">🌙 Dark Mode</button>
+
+<div id="timetable" class="timetable"></div>
+
+<!-- Modal Reminder -->
+<div id="reminderModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <h2 id="modalTitle">Reminder!</h2>
+    <p id="modalBody"></p>
+    <button id="dismissBtn">Dismiss</button>
+    <button id="snoozeBtn">Snooze</button>
+  </div>
+</div>
+
+<script src="js/utils.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/timetable.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
